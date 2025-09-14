@@ -1,0 +1,45 @@
+[data-theme="dark"] {
+  color: #fff;
+}
+[data-theme="dark"] input,
+[data-theme="dark"] textarea,
+[data-theme="dark"] select {
+  background: #111827;
+  color: #fff;
+  border-color: #374151;
+}
+[data-theme="dark"] .card {
+  background: #0f1724;
+  color: #fff;
+}
+
+/* Theme-aware table */
+.theme-table {
+  background-color: var(--card);
+  color: var(--text);
+}
+
+.theme-table thead {
+  background-color: #f1f5f9; /* light gray for light theme */
+  color: #111827;
+}
+
+.theme-table tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* Dark theme styles */
+[data-theme="dark"] .theme-table {
+  background-color: #0f172a;
+  color: #f8fafc;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .theme-table thead {
+  background-color: #1e293b;
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .theme-table tbody tr:hover {
+  background-color: #1e293b;
+}

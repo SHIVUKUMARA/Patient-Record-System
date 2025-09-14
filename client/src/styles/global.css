@@ -1,0 +1,21 @@
+:root{
+  --bg:#ffffff;
+  --text:#222;
+  --card:#ffffff;
+  --accent1:#7b5cff;
+  --accent2:#ff6b6b;
+}
+[data-theme='dark']{
+  --bg:#0b1020;
+  --text:#fff;
+  --card:#0f1724;
+  --accent1:#8b5cff;
+  --accent2:#ff7b7b;
+}
+body{ background: linear-gradient(120deg,var(--accent1),var(--accent2)); min-height:100vh; color:var(--text); }
+.app-root .container-fluid{ background: var(--bg); border-radius:12px; padding:20px; box-shadow:0 6px 18px rgba(0,0,0,0.12) }
+.card{ background:var(--card); color:var(--text); border-radius:12px; }
+.navbar { background: linear-gradient(90deg, #343a40, #212529); }
+.hover-card{ transition: transform .18s ease, box-shadow .18s ease; }
+.hover-card:hover{ transform: translateY(-6px); box-shadow: 0 10px 30px rgba(0,0,0,0.18); }
+.form-floating > .form-control:focus, .form-floating > .form-select:focus { box-shadow: 0 0 0 0.2rem rgba(123,92,255,0.25); border-color: var(--accent1); }
